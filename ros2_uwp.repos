@@ -6,7 +6,7 @@ repositories:
   eProsima/Fast-RTPS:
     type: git
     url: https://github.com/theseankelly/Fast-RTPS.git
-    version: dashing-windows
+    version: dashing-uwp
   ros2/ament_cmake_ros:
     type: git
     url: https://github.com/ros2/ament_cmake_ros.git
@@ -29,8 +29,8 @@ repositories:
     version: dashing
   ros2/libyaml_vendor:
     type: git
-    url: https://github.com/ros2/libyaml_vendor.git
-    version: dashing
+    url: https://github.com/theseankelly/libyaml_vendor.git
+    version: dashing-uwp
   ros2/rcl:
     type: git
     url: https://github.com/ros2/rcl.git
