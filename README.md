@@ -122,8 +122,8 @@ Next, clone the `build_tools` source packages
 ```
 cd c:\ros2_uwp\tools
 mkdir src
-curl -sk https://raw.githubusercontent.com/theseankelly/ros2_uwp/master/build_tools.repo > build_tools.repo
-vcs import src < build_tools.repo
+curl -sk https://raw.githubusercontent.com/theseankelly/ros2_uwp/master/build_tools.repos > build_tools.repos
+vcs import src < build_tools.repos
 ```
 
 Build the tools for the host system using `colcon`:
