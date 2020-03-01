@@ -106,7 +106,7 @@ root path:
 ```
 mkdir c:\ros2_uwp
 mkdir c:\ros2_uwp\tools
-mkdir c:\ros2_uwp\ros2
+mkdir c:\ros2_uwp\target
 ```
 
 ### Build The Tools
@@ -141,7 +141,7 @@ call c:\ros2_uwp\tools\install\local_setup.bat
 From the same command prompt (admin VS dev prompt with the ROS2 tools setup
 script sourced), clone the `ros2_uwp` source packages
 ```
-cd c:\ros2_uwp\ros2
+cd c:\ros2_uwp\target
 mkdir src
 curl -sk https://raw.githubusercontent.com/theseankelly/ros2_uwp/master/ros2_uwp.repos > ros2_uwp.repos
 vcs import src < ros2_uwp.repos
@@ -156,13 +156,13 @@ colcon build --merge-install --packages-ignore rmw_fastrtps_dynamic_cpp rcl_logg
 
 High-level steps:
 1. Create a c++/WinRT project in Visual Studio
-2. Add c:\ros2_uwp\ros2\install\include to the project include path
-3. Add c:\ros2_uwp\ros2\install\Lib to the project Lib path
+2. Add c:\ros2_uwp\target\install\include to the project include path
+3. Add c:\ros2_uwp\target\install\Lib to the project Lib path
 4. Add necessary libraries to the project linker directives
 
 You must include all depedent DLLs in the project itself for packaging. This is
 done by right-clicking on the project and choosing 'Add existing item`. Select
-all DLLs under `c:\ros2_uwp\ros2\install\bin. Once added, select them all,
+all DLLs under `c:\ros2_uwp\target\install\bin. Once added, select them all,
 right click, and choose 'properties'. Mark them as content to be copied and
 packaged along with the application.
 
