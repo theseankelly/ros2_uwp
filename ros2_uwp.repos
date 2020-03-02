@@ -77,8 +77,8 @@ repositories:
     version: eloquent
   ros2/rosidl_typesupport:
     type: git
-    url: https://github.com/ros2/rosidl_typesupport.git
-    version: eloquent
+    url: https://github.com/theseankelly/rosidl_typesupport.git
+    version: eloquent-uwp
   ros2/rosidl_typesupport_fastrtps:
     type: git
     url: https://github.com/ros2/rosidl_typesupport_fastrtps.git
